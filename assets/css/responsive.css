@@ -1,0 +1,73 @@
+/* ------------------ PC ------------------ */
+@media (min-width: 992px) {}
+
+
+
+/* ------------------ Tablet & Mobile ------------------ */
+@media (max-width: 991.98px) {
+
+   /* 1. ẩn navbar */
+   .navbar {
+      display: none;
+   }
+
+   /* 2. chuyển logo vào giữa */
+   .header-top {
+      position: relative;
+   }
+
+   .header__logo {
+      position : absolute;
+      left     : 50%;
+      translate: -50% -50%;
+      /* ===> căn giữa logo */
+   }
+
+   /* 3. căn lại vị trí icon menu */
+   .menu-header__icon {
+      position: absolute;
+      top     : 38px;
+      left    : 26px;
+      color   : #fff;
+      width   : 24px;
+   }
+
+   /* 4. Overlay */
+   .memu-overlay {
+      position        : fixed;
+      background      : rgba(0, 0, 0, 0.3);
+      inset           : 0;
+      /* inset        : 0; ===> cách 4 cạnh = 0 */
+      z-index         : 1;
+      opacity         : 0;
+      visibility      : hidden;
+      transition      : 0.5s;
+   }
+
+   /* 5. Ktra checkbox có đc check hay không */
+   .nemu-checkbox:checked~.memu-overlay {
+      opacity   : 1;
+      visibility: visible;
+   }
+}
+
+
+
+
+/*  ------------------ Tablet ------------------ */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+
+
+/* ------------------ Mobile ------------------ */
+@media (max-width: 767.98px) {}
+
+
+
+/* tạm ẩn phần không liên quan */
+.hero,
+main,
+footer {
+   display: none;
+}
