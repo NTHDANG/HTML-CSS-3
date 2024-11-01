@@ -170,6 +170,26 @@
       width     : 90%;
    }
 
+   /* 13. Xếp dọc xuống phần team list */
+   .team__list {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap              : 30px;
+   }
+
+   .team-item__thumb {
+      margin: 0 auto;
+   }
+
+   /* 14. Xếp dọc xuống phần install */
+   .install__img {
+      display: none;
+   }
+
+   .install__content {
+      margin: 0 auto;
+      width : 90%;
+   }
+
 }
 
 
